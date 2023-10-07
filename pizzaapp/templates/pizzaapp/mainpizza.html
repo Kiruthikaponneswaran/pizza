@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pizza mania</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/Mainpizzapage.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container-fluid col-10">
+<nav class="navbar navbar-expand-lg" id="navbar">
+<a class="navbar-brand" href="#"><img src="{% static 'images/website.png' %}" width="100" height="40"></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+</svg>
+</button>
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto mb-lg-0">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#service">Services</a></li>
+<li class="nav-item"><a class="nav-link" href="{% static 'Add to cart.html' %}">Click for order</a></li>
+</ul>
+</div>
+</nav>
+<section>
+  <!--carousal-->
+
+
+  <div class="container">
+     
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="{% static 'images/giphy (1).gif' %}" alt="cheesy pizza!" style="width:100%;"><div class="carousel-caption">
+            <h3>Anyone who says that money cannot buy happiness has clearly never spent their money on pizza</h1></div>
+            </h3>
+            
+          </div>
+        
+  
+        
+      </div>
+  
+      
+      
+      
+    </div>
+  </div>
+</section>
+<!--Home-->
+<section id="home">
+<div class="row">
+<div class="col-lg-6 col-md col-12 order-1 pt-5">
+<h1 class="display-4">Welcome to<br><span> Pizza Mania</span></h1>
+<p class="my-lg-2 my-lg-3 my-3">The tasty pizza of your choice!<br>That dreamy slice may be your top pick because of the specialty crust, but it isn’t only great because of the crust. If the sauce, cheese, or toppings don’t work, a savory crust goes to waste. It’s the glorious harmony of these key ingredients that makes the perfect pie.</p>
+<button class="btn btn-primary my-3">Get Started</button>
+</div>
+<div class="col-lg-6 col-md-6 col-12 py-lg-0 py-3 order-sm-2"><img src="{% static 'images/website side.jpg' %}" class="img-fluid"></div>
+</div>
+</section>
+
+<!--About-->
+<section id="about">
+<div class="row">
+<div class="col-lg-6 col-md-6 col-12 py-lg-0 py-3"><img src="{% static 'images/pizza 1.jpg' %}" class="img-fluid"></div>
+<div class="col-lg-6 col-md col-12 pt-5">
+<h6 style="font-size:50px;">ABOUT US</h6>
+<h1 class="display-5"><span>Pizza Mania</span></h1>
+<p>'Pizza Mania’ The key to progress is much similar to the key to improving a pizza – the more you put into it, the more you receive in return. Our pizza family is as eager for flawlessness today as we were at the point at which we originally opened our entryways over 40 years back. Also, we’re headed to be the best at making innovative new items</p>
+<button class="btn btn-primary my-3">Services</button>
+</div>
+</div>
+</section>
+
+<!--section-->
+<section id="service">
+<div class="row">
+<h1 class="text-center">Our services</h1>
+<div class="col-md-4">
+<div class="card shadow">
+<div class="inner"><img src="{% static 'images/pizza 7.jpg' %}" class="card-img-top rounded"></div>
+<div class="card-body">
+<h5 class="card-title text-center">Customized Pizza</h5>
+<p class="card-text">Choose from FOUR individual sized Crusts, over 40 Sauces, Toppings, and Afterbakes. Order a custom pizza for delivery.</p>
+<a href="#" type="button" class="btn btn-success">Learn More</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card shadow">
+<div class="inner"><img src="{% static 'images/giphy (1).gif' %}" class="card-img-top rounded"></div>
+<div class="card-body">
+<h5 class="card-title text-center">Discount Offers</h5>
+<p class="card-text">Best Pizza Deal - Save up to 40%. Try Veg/Non-Veg Pizza.Types: Pizza, Kulcha Burger, Khichdi, Biryani, Indian Thali, Rice Bowls, Beverage</p>
+<a href="#" type="button" class="btn btn-success">Learn More</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card shadow">
+<div class="inner"><img src="{% static 'images/pizza 4.jpg' %}" class="card-img-top rounded"></div>
+<div class="card-body">
+<h5 class="card-title text-center">Free Delivery on meals</h5>
+<p class="card-text">Choose from FOUR individual sized Crusts, over 40 Sauces, Toppings, and Afterbakes. Order a custom pizza for delivery.</p>
+<a href="#" type="button" class="btn btn-success">Learn More</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</body>
+</html>
